@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-image: url("restaurant.jpg");
+}
+
+header {
+    position: fixed;
+    background: #8f80e2 ;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+}
+
+.left_area h3 {
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: #f11e0f
+}
+
+.logout_btn {
+    padding: 5px;
+    background: #f11e0f;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover {
+    background: #020c0b;
+}
+
+.sidebar {
+    background: #7cbaec;
+    position: fixed;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar a {
+    color: rgb(14, 1, 1);
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration:none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #ffffff;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #0a0000;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #f7f7fc;
+}
+
+#check:checked ~ .sidebar {
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+#check:checked ~ .sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content {
+    padding-left: 250px;
+}
+
+#check:checked ~ .content {
+    margin-left: 60px;
+}
+
+#check {
+    display: none;
+}
